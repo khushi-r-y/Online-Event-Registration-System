@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Events</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFF8EF;
+            color: #342E27;
+        }
+
+        /* Navigation */
+        header {
+            background-color: #78815A;
+            padding: 20px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .brand {
+            color: white;
+            font-size: 22px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav .account {
+            background-color: #C7653B;
+            padding: 9px 14px;
+            border-radius: 5px;
+        }
+
+        /* Home section */
+        .home {
+            max-width: 1100px;
+            margin: auto;
+            padding: 75px 25px;
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+
+        .welcome h1 {
+            font-size: 40px;
+            line-height: 1.3;
+            margin: 15px 0;
+        }
+
+        .welcome h1 span {
+            color: #78815A;
+        }
+
+        .welcome p {
+            color: #6E6256;
+            line-height: 1.7;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #C7653B;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .button:hover,
+        nav .account:hover {
+            background-color: #8E482D;
+        }
+
+        /* Website information */
+        .info {
+            background-color: #E9EBD9;
+            padding: 28px;
+            border-radius: 12px;
+        }
+
+        .info h2 {
+            color: #59613F;
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+
+        .info p {
+            background-color: #FFF8EF;
+            padding: 14px;
+            margin-top: 12px;
+            border-radius: 6px;
+            color: #342E27;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #342E27;
+            color: #FFF8EF;
+            text-align: center;
+            padding: 18px;
+            font-size: 13px;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 700px) {
+            header {
+                padding: 18px 5%;
+            }
+
+            .home {
+                grid-template-columns: 1fr;
+                padding: 45px 6%;
+                gap: 30px;
+            }
+
+            .welcome h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <a href="index.html" class="brand">Campus Events</a>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="events.jsp">Events</a>
+            <a href="login.jsp">Login</a>
+            <a href="create-account.jsp" class="account">
+                Create Account
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="home">
+
+            <!-- Left side -->
+            <div class="welcome">
+                <h1>
+                    Discover Events.<br>
+                    <span>Create Experiences.</span>
+                </h1>
+
+                <p>
+                    Welcome to Campus Events! Explore college events,
+                    register for activities, and make the most of
+                    your campus life.
+                </p>
+
+                <a href="events.jsp" class="button">
+                    Explore Events &rarr;
+                </a>
+            </div>
+
+            <!-- Right side -->
+            <div class="info">
+                <h2>What You Can Do</h2>
+
+                <p>📅 <strong>Explore Events</strong><br>
+                    View upcoming college events and their details.
+                </p>
+
+                <p>✓ <strong>Register Easily</strong><br>
+                    Register for events through your student account.
+                </p>
+
+                <p>📋 <strong>Manage Registrations</strong><br>
+                    View your registrations and cancel when needed.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Campus Events | Online Event Registration System</p>
+        <p>Connecting students with campus experiences.</p>
+    </footer>
+
+</body>
+</html>
